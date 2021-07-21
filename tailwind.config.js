@@ -36,7 +36,7 @@ module.exports = {
         DEFAULT: {
           css: {
             fontFamily: `${theme('fontFamily.serif')}`,
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.800'),
             lineHeight: '1.5rem',
             a: {
               color: theme('colors.blue.500'),
@@ -46,19 +46,22 @@ module.exports = {
               code: { color: theme('colors.blue.400') },
             },
             h1: {
-              fontWeight: '700',
+              fontFamily: `${theme('fontFamily.sans')}`,
+              fontWeight: '400',
               fontSize: '1.75em',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
             h2: {
-              fontWeight: '700',
+              fontFamily: `${theme('fontFamily.sans')}`,
+              fontWeight: '400',
               fontSize: '1.25em',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
             h3: {
-              fontWeight: '600',
+              fontFamily: `${theme('fontFamily.sans')}`,
+              fontWeight: '400',
               color: theme('colors.gray.900'),
             },
             'h4,h5,h6': {
@@ -105,17 +108,17 @@ module.exports = {
               code: { color: theme('colors.blue.400') },
             },
             h1: {
-              fontWeight: '700',
+              fontWeight: '600',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
             h2: {
-              fontWeight: '700',
+              fontWeight: '400',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.100'),
             },
             h3: {
-              fontWeight: '600',
+              fontWeight: '400',
               color: theme('colors.gray.100'),
             },
             'h4,h5,h6': {
