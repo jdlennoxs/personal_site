@@ -18,6 +18,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        serif: ['"Crimson Pro"', ...defaultTheme.fontFamily.serif],
+        mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         blue: colors.sky,
@@ -33,7 +35,9 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
+            fontFamily: `${theme('fontFamily.serif')}`,
             color: theme('colors.gray.700'),
+            lineHeight: '1.5rem',
             a: {
               color: theme('colors.blue.500'),
               '&:hover': {
@@ -43,11 +47,13 @@ module.exports = {
             },
             h1: {
               fontWeight: '700',
+              fontSize: '1.75em',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
             h2: {
               fontWeight: '700',
+              fontSize: '1.25em',
               letterSpacing: theme('letterSpacing.tight'),
               color: theme('colors.gray.900'),
             },
