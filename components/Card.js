@@ -1,29 +1,26 @@
 import Image from 'next/image'
+import tw, { styled } from 'twin.macro'
 import Link from '@/components/Link'
 
+const Container = styled.div(() => [tw`p-4 md:w-1/2`])
+const Border = styled.div(() => [
+  tw`h-full border-2 border-gray-200 border-opacity-60 dark:border-gray-700 rounded-md`,
+  tw`overflow-hidden`,
+])
+const CardImage = styled(Image)(() => [tw`lg:h-48 md:h-36`, tw`object-cover object-center`])
+const TextContainer = styled.div(() => [tw`p-6`])
+
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="p-4 md:w-1/2 md" style={{ maxWidth: '544px' }}>
-    <div className="h-full border-2 border-gray-200 border-opacity-60 dark:border-gray-700 rounded-md overflow-hidden">
+  <Container style={{ maxWidth: '544px' }}>
+    <Border>
       {href ? (
         <Link href={href} aria-label={`Link to ${title}`}>
-          <Image
-            alt={title}
-            src={imgSrc}
-            className="lg:h-48 md:h-36 object-cover object-center"
-            width={544}
-            height={306}
-          />
+          <CardImage alt={title} src={imgSrc} width={544} height={306} />
         </Link>
       ) : (
-        <Image
-          alt={title}
-          src={imgSrc}
-          className="lg:h-48 md:h-36 object-cover object-center"
-          width={544}
-          height={306}
-        />
+        <CardImage alt={title} src={imgSrc} width={544} height={306} />
       )}
-      <div className="p-6">
+      <TextContainer>
         <h2 className="text-2xl font-bold leading-8 tracking-tight mb-3">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
@@ -43,9 +40,9 @@ const Card = ({ title, description, imgSrc, href }) => (
             Learn more &rarr;
           </Link>
         )}
-      </div>
-    </div>
-  </div>
+      </TextContainer>
+    </Border>
+  </Container>
 )
 
 export default Card

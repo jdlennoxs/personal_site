@@ -9,17 +9,20 @@ import ThemeSwitch from './ThemeSwitch'
 
 const LayoutWrapper = ({ children }) => {
   return (
-    <SectionContainer>
-      <div className="flex flex-col justify-between h-screen">
-        <header className="flex items-center justify-between py-10">
+    <div className="flex flex-col justify-between h-screen">
+      <header className="py-4">
+        <div tw="flex items-center justify-between w-full max-w-3xl px-4 pb-4 mx-auto sm:px-6 xl:max-w-4xl xl:px-0">
           <div>
             <Link href="/" aria-label="Tailwind CSS Blog">
               <div className="flex items-center justify-between">
                 <div className="mr-3">
-                  <Logo />
+                  {/* <Logo /> */}
+                  <span aria-label="astronaut" role="img" className="text-xl">
+                    🧑‍🚀
+                  </span>
                 </div>
                 {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
+                  <div className="hidden h-6 text-xl font-sans sm:block">
                     {siteMetadata.headerTitle}
                   </div>
                 ) : (
@@ -43,11 +46,13 @@ const LayoutWrapper = ({ children }) => {
             <ThemeSwitch />
             <MobileNav />
           </div>
-        </header>
+        </div>
+      </header>
+      <SectionContainer>
         <main className="mb-auto">{children}</main>
-        <Footer />
-      </div>
-    </SectionContainer>
+      </SectionContainer>
+      <Footer />
+    </div>
   )
 }
 

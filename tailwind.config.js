@@ -17,12 +17,15 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['"Didact Gothic"', 'Poppins', 'Inter', ...defaultTheme.fontFamily.sans],
         serif: ['"Crimson Pro"', ...defaultTheme.fontFamily.serif],
         mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
-        blue: colors.sky,
+        blue: colors.blue,
+        cool: colors.blueGray,
+        dark: '#292A2B',
+        warm: colors.warmGray,
         code: {
           green: '#b5f4a5',
           yellow: '#ffe484',
@@ -36,7 +39,7 @@ module.exports = {
         DEFAULT: {
           css: {
             fontFamily: `${theme('fontFamily.serif')}`,
-            color: theme('colors.gray.800'),
+            color: theme('colors.gray.900'),
             lineHeight: '1.5rem',
             a: {
               color: theme('colors.blue.500'),
@@ -50,22 +53,22 @@ module.exports = {
               fontWeight: '400',
               fontSize: '1.75em',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.800'),
             },
             h2: {
               fontFamily: `${theme('fontFamily.sans')}`,
               fontWeight: '400',
               fontSize: '1.25em',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.800'),
             },
             h3: {
               fontFamily: `${theme('fontFamily.sans')}`,
               fontWeight: '400',
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.800'),
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.900'),
+              color: theme('colors.gray.800'),
             },
             code: {
               color: theme('colors.pink.500'),
