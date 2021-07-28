@@ -22,7 +22,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
       <BlogSeo url={`${siteMetadata.siteUrl}/blog/${slug}`} {...frontMatter} />
       <article>
         <div className="divide-y divide-gray-200 dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
+          <header className="pt-10 xl:pb-6">
             <div
               className="space-y-1 xl:grid xl:grid-cols-4 xl:grid-rows-2 xl:gap-x-6 xl:gap-y-6"
               style={{ gridTemplateRows: 'auto 1fr' }}

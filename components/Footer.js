@@ -3,7 +3,7 @@ import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcons from '@/components/SocialIcons'
 
-const FooterContainer = styled.footer(() => [tw`bg-gray-50 w-full border-t border-gray-200`])
+const FooterContainer = styled.footer(() => [tw`bg-dark w-full border-gray-200`])
 const FooterContent = styled.div(() => [tw`flex flex-col items-center mt-10`])
 
 export default function Footer() {

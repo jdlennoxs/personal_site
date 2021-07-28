@@ -17,6 +17,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@iconify/icons-la": "^1.1.0",
+    "@iconify/react": "^1.1.4",
     "@mapbox/rehype-prism": "^0.6.0",
     "@tailwindcss/forms": "^0.3.2",
     "@tailwindcss/typography": "^0.4.0",

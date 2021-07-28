@@ -1107,6 +1107,16 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.0.tgz#f3933a44e365864f4dad5db94158106d511e8131"
   integrity sha512-sqKVVVOe5ivCaXDWivIJYVSaEgdQK9ul7a4Kity5Iw7u9+wBAPbX1RMSnLLmp7O4Vzj0WOWwMAJsTL00xwaNug==
 
+"@iconify/icons-la@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-la/-/icons-la-1.1.0.tgz#da00d0ed5686ff07d5addcf75a91175beb2629d3"
+  integrity sha512-9LEAEabzI2xMJzSh0wqeJmjYseWsDvN9mSZKcCoHlT+pZCJkMAwHoyoBgI7pO2Deo31VG2JiX5hx/4VyMtbE0Q==
+
+"@iconify/react@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@iconify/react/-/react-1.1.4.tgz#c778eddbaf196e55705d0bedff00d039dc1de8d3"
+  integrity sha512-oxq8IMOq8q3nKGiDHbQPC8FcFuBsKve68JWBo140d5LRnj0bv5TB/FE/y01ZSvEZ7PlI2HIrnb2qivPN8kTDgw==
+
 "@mapbox/rehype-prism@^0.6.0":
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/@mapbox/rehype-prism/-/rehype-prism-0.6.0.tgz#3d8a860870951d4354257d0ba908d11545bd5ed5"

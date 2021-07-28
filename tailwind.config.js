@@ -18,13 +18,13 @@ module.exports = {
       },
       fontFamily: {
         sans: ['"Didact Gothic"', 'Poppins', 'Inter', ...defaultTheme.fontFamily.sans],
-        serif: ['"Crimson Pro"', ...defaultTheme.fontFamily.serif],
+        serif: ['"EB Garamond"', ...defaultTheme.fontFamily.serif],
         mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         blue: colors.blue,
         cool: colors.blueGray,
-        dark: '#292A2B',
+        dark: '#2A2A2F',
         warm: colors.warmGray,
         code: {
           green: '#b5f4a5',

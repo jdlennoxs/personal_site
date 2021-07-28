@@ -50,7 +50,7 @@ class MyDocument extends Document {
           <link rel="alternate" type="application/rss+xml" href="/index.xml" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@0;1&family=Fira+Code&family=Poppins&family=Didact+Gothic&display=swap"
+            href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Fira+Code&family=Didact+Gothic&display=swap"
             rel="stylesheet"
           />
           <link
@@ -60,7 +60,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
           />
         </Head>
-        <body className="antialiased text-black bg-white dark:bg-dark dark:text-white">
+        <body className="antialiased text-black bg-gray-50 dark:bg-dark dark:text-white">
           <Main />
           <NextScript />
         </body>
