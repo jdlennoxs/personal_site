@@ -89,11 +89,11 @@ const ThemeSwitch = () => {
           ></Toggle>
           <Pill>
             <Light>
-              <Icon icon={sun} color="#2A2A2F" height="1.25em" />
+              <Icon icon={sun} color="#2A2A2F" height="1em" />
             </Light>
             {/* <ToggleButton></ToggleButton> */}
             <Dark>
-              <Icon icon={moon} color="#fff" height="1.25em" />
+              <Icon icon={moon} color="#fff" height="1em" />
             </Dark>
           </Pill>
         </label>

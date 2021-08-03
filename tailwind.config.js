@@ -22,7 +22,7 @@ module.exports = {
         mono: ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
       colors: {
-        blue: colors.blue,
+        blue: colors.teal,
         cool: colors.blueGray,
         dark: '#2A2A2F',
         warm: colors.warmGray,
@@ -39,14 +39,14 @@ module.exports = {
         DEFAULT: {
           css: {
             fontFamily: `${theme('fontFamily.serif')}`,
-            color: theme('colors.gray.900'),
+            color: theme('colors.gray.800'),
             lineHeight: '1.5rem',
             a: {
               color: theme('colors.blue.500'),
               '&:hover': {
                 color: theme('colors.blue.600'),
               },
-              code: { color: theme('colors.blue.400') },
+              code: { color: theme('colors.blue.500') },
             },
             h1: {
               fontFamily: `${theme('fontFamily.sans')}`,
@@ -71,8 +71,8 @@ module.exports = {
               color: theme('colors.gray.800'),
             },
             code: {
-              color: theme('colors.pink.500'),
-              backgroundColor: theme('colors.gray.100'),
+              color: theme('colors.red.400'),
+              backgroundColor: theme('colors.gray.200'),
               paddingLeft: '4px',
               paddingRight: '4px',
               paddingTop: '2px',
@@ -104,9 +104,9 @@ module.exports = {
           css: {
             color: theme('colors.gray.300'),
             a: {
-              color: theme('colors.blue.500'),
+              color: theme('colors.blue.400'),
               '&:hover': {
-                color: theme('colors.blue.400'),
+                color: theme('colors.blue.500'),
               },
               code: { color: theme('colors.blue.400') },
             },
