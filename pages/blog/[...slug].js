@@ -36,21 +36,18 @@ export default function Blog({ post, prev, next }) {
   const { mdxSource, frontMatter } = post
 
   return (
-    <>
-      {frontMatter.draft !== true ? (
-        <PostLayout frontMatter={frontMatter} prev={prev} next={next}>
-          <MDXRemote {...mdxSource} components={MDXComponents} />
-        </PostLayout>
-      ) : (
+    <PostLayout frontMatter={frontMatter} prev={prev} next={next}>
+      <MDXRemote {...mdxSource} components={MDXComponents} />
+      {frontMatter.draft === true ? (
         <div className="mt-24 text-center">
           <PageTitle>
-            Under Construction{' '}
+            This post is still under construction{' '}
             <span role="img" aria-label="roadwork sign">
               🚧
             </span>
           </PageTitle>
         </div>
-      )}
-    </>
+      ) : null}
+    </PostLayout>
   )
 }
