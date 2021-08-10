@@ -15,7 +15,9 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, fileName, date: created, lastmod, title, tags } = frontMatter
+
+  const date = lastmod || created
 
   return (
     <SectionContainer>

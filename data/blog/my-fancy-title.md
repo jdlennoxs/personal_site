@@ -8,3 +8,6 @@ images: []
 ---
 
 Draft post which should not display
+[[back-link]]
+
+This should try and link to [[the-time-machine]]

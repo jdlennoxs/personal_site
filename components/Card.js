@@ -44,13 +44,7 @@ transition: all .4s;
 const CoverImage = ({ href, title, imgSrc }) => (
   <div style={{ fontSize: '0' }}>
     {href ? (
-      <CardImage
-        alt={title}
-        src={imgSrc}
-        width={544}
-        height={306}
-        className={{ display: 'block' }}
-      />
+      <CardImage alt={title} src={imgSrc} width={544} height={306} />
     ) : (
       <CardImage alt={title} src={imgSrc} width={544} height={306} />
     )}
